@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8f6" />
+    <meta
+      name="description"
+      content="BiliPod，把喜欢的哔哩哔哩视频整理成播单，随时随地，戴上耳机继续听。"
+    />
+    <title>BiliPod ♪(´▽｀) 耳机分你一半～-BiliPod</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="preload" as="image" href="./assets/splashscreen.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#features">跳到功能介绍</a>
+
+    <header class="site-header" aria-label="网站导航">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <img src="./favicon.png" alt="" width="32" height="32" />
+        <span>BiliPod</span>
+      </a>
+      <nav aria-label="页面章节">
+        <a href="#features">功能</a>
+        <a class="nav-download" href="#download">参与测试</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> 从视频，到耳边</div>
+          <h1 id="hero-title">耳机分你一半<span class="music-mark">♪</span></h1>
+          <p class="hero-lead">
+            把想反复听见的 B 站内容，装进一间轻巧、专注的声音资料库。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#features">开始认识 BiliPod</a>
+            <a class="button secondary" href="#download">获取测试版 <span>↘</span></a>
+          </div>
+          <div class="hero-notes" aria-label="产品特点">
+            <span>播单整理</span>
+            <span>后台播放</span>
+            <span>进度随心控</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="BiliPod 开屏插画">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="splash-card">
+            <img src="./assets/splashscreen.webp" width="941" height="1672" alt="BiliPod 开屏插画：两位戴着耳机的女孩坐在小电视上" fetchpriority="high" />
+          </div>
+          <div class="floating-note note-one" aria-hidden="true">♫</div>
+          <div class="floating-note note-two" aria-hidden="true">♪</div>
+          <div class="playing-pill" aria-hidden="true">
+            <span class="playing-dot"></span>
+            <span>正在播放</span>
+            <span class="mini-wave"><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true"><span>向下听</span><i></i></div>
+      </section>
+
+      <section class="manifesto" aria-label="产品简介">
+        <p class="reveal">
+          收藏不该只是落灰。<br />
+          <span>让每一个值得听见的视频，重新流动起来。</span>
+        </p>
+      </section>
+
+      <section class="feature-story" id="features" aria-label="功能介绍">
+        <div class="chapter-line" aria-hidden="true">
+          <span class="chapter-progress"></span>
+        </div>
+
+        <article class="feature feature-home" id="home">
+          <div class="feature-copy reveal">
+            <p class="chapter-number">01 / 主页</p>
+            <h2>打开，就是<br />没听完的那一段。</h2>
+            <p>
+              最近播放与最近添加一眼可见。无需在层层菜单里寻找，熟悉的声音会在你回来时，稳稳停在原处。
+            </p>
+            <ul class="feature-tags" aria-label="主页功能">
+              <li>最近播放</li>
+              <li>最近添加</li>
+              <li>一触续播</li>
+            </ul>
+          </div>
+          <div class="phone-stage reveal">
+            <div class="phone-shadow"></div>
+            <figure class="phone phone-light">
+              <img src="./assets/screens/home.webp" width="1206" height="2622" alt="BiliPod 主页界面，展示最近播放和最近添加的内容" loading="lazy" />
+            </figure>
+            <div class="annotation annotation-right">给耳朵留一点空白</div>
+          </div>
+        </article>
+
+        <article class="feature feature-library" id="library">
+          <div class="feature-copy reveal">
+            <p class="chapter-number">02 / 资料库</p>
+            <h2>喜欢的内容，<br />终于井井有条。</h2>
+            <p>
+              视频与播单都归入你的个人资料库。按心情、歌手或主题整理，让每次想听都有清晰入口。
+            </p>
+            <ul class="feature-tags" aria-label="资料库功能">
+              <li>自定义播单</li>
+              <li>内容归档</li>
+              <li>数量概览</li>
+            </ul>
+          </div>
+          <div class="phone-stage reveal">
+            <div class="library-card-back" aria-hidden="true"></div>
+            <figure class="phone phone-light">
+              <img src="./assets/screens/library.webp" width="1206" height="2622" alt="BiliPod 资料库界面，展示视频与自建播单" loading="lazy" />
+            </figure>
+            <div class="annotation annotation-left">只留下想反复听见的内容</div>
+          </div>
+        </article>
+
+        <article class="feature feature-search" id="search">
+          <div class="feature-copy reveal">
+            <p class="chapter-number">03 / 搜索</p>
+            <h2>一个链接，<br />声音即刻入库。</h2>
+            <p>
+              支持 B 站链接、BV 号、视频或播单搜索。复制、粘贴、收好，省去冗长步骤，把时间留给真正想听的内容。
+            </p>
+            <ul class="feature-tags" aria-label="搜索功能">
+              <li>B 站链接</li>
+              <li>BV 号</li>
+              <li>历史记录</li>
+            </ul>
+          </div>
+          <div class="phone-stage reveal">
+            <div class="search-loop" aria-hidden="true"></div>
+            <figure class="phone phone-light">
+              <img src="./assets/screens/search.webp" width="1206" height="2622" alt="BiliPod 搜索界面，可通过 B 站链接、BV 号、视频或播单搜索" loading="lazy" />
+            </figure>
+            <div class="annotation annotation-right">找到 · 收好 · 开始听</div>
+          </div>
+        </article>
+
+        <article class="feature feature-playlist" id="playlist">
+          <div class="feature-copy reveal">
+            <p class="chapter-number">04 / 播单</p>
+            <h2>每份偏爱，<br />都有自己的顺序。</h2>
+            <p>
+              从专辑到长视频合集，统一收进顺手的播放队列。封面、作者、时长清晰排布，下一首始终心中有数。
+            </p>
+            <ul class="feature-tags" aria-label="播单功能">
+              <li>播放全部</li>
+              <li>自动连播</li>
+              <li>独立管理</li>
+            </ul>
+          </div>
+          <div class="phone-stage reveal">
+            <div class="playlist-wash" aria-hidden="true"></div>
+            <figure class="phone phone-light">
+              <img src="./assets/screens/playlist.webp" width="1206" height="2622" alt="BiliPod 播单详情界面，展示按顺序排列的音视频内容" loading="lazy" />
+            </figure>
+            <div class="annotation annotation-left">下一首，也正合心意</div>
+          </div>
+        </article>
+
+        <article class="feature feature-player" id="player">
+          <div class="feature-copy reveal">
+            <p class="chapter-number">05 / 播放</p>
+            <h2>屏幕暗下来，<br />声音继续发光。</h2>
+            <p>
+              倍速、快退、快进、播放队列与睡眠定时都在触手可及的位置。长内容也能听得从容，听得专心。
+            </p>
+            <ul class="feature-tags" aria-label="播放功能">
+              <li>倍速播放</li>
+              <li>10 秒快退</li>
+              <li>30 秒快进</li>
+              <li>睡眠定时</li>
+            </ul>
+          </div>
+          <div class="phone-stage reveal">
+            <div class="player-glow" aria-hidden="true"></div>
+            <figure class="phone phone-dark">
+              <img src="./assets/screens/player.webp" width="1206" height="2622" alt="BiliPod 播放界面，包含进度、倍速、快进快退与睡眠定时控制" loading="lazy" />
+            </figure>
+            <div class="annotation annotation-right annotation-dark">把世界调成静音，只听这一首</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="closing" id="download" aria-labelledby="download-title">
+        <div class="closing-orbit" aria-hidden="true"></div>
+        <div class="closing-copy reveal">
+          <p class="eyebrow"><span></span> 测试计划</p>
+          <h2 id="download-title">下一次播放，<br />从 BiliPod 开始。</h2>
+          <p>iOS 与 Android 测试版本正在准备中。稳定构建完成后，下载入口将在这里开放。</p>
+          <div class="download-badges" aria-label="测试版下载入口">
+            <a class="download-badge is-disabled" href="" aria-disabled="true" data-placeholder>
+              <img src="./assets/app-store-badge.png" alt="App Store 下载 iOS 测试版" />
+            </a>
+            <a class="download-badge is-disabled" href="" aria-disabled="true" data-placeholder>
+              <img src="./assets/android-badge.png" alt="下载 Android APK 测试版" />
+            </a>
+          </div>
+          <p class="availability"><span></span> 下载地址暂未开放</p>
+        </div>
+        <div class="closing-art reveal" aria-hidden="true">
+          <img src="./favicon.png" alt="" />
+          <div class="closing-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top">
+        <img src="./favicon.png" alt="" width="28" height="28" />
+        <span>BiliPod</span>
+      </a>
+      <p>♪(´▽｀) 耳机分你一半～</p>
+      <p>Made for listening.</p>
+    </footer>
+  </body>
+</html>
