@@ -24,7 +24,9 @@
         <span>BiliPod</span>
       </a>
       <nav aria-label="页面章节">
-        <a href="#features">功能</a>
+        <a class="nav-optional" href="#features">功能</a>
+        <a href="./support/">支持</a>
+        <a class="nav-optional" href="./privacy/">隐私</a>
         <a class="nav-download" href="#download">参与测试</a>
       </nav>
     </header>
@@ -41,14 +43,14 @@
             <a class="button primary" href="#features">开始认识 BiliPod</a>
             <a class="button secondary" href="#download">获取测试版 <span>↘</span></a>
           </div>
-          <div class="hero-notes" aria-label="产品特点">
-            <span>播单整理</span>
-            <span>后台播放</span>
-            <span>进度随心控</span>
+          <div class="hero-notes" role="list" aria-label="产品特点">
+            <span role="listitem">播单整理</span>
+            <span role="listitem">后台播放</span>
+            <span role="listitem">进度随心控</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="BiliPod 开屏插画">
+        <div class="hero-visual reveal" role="img" aria-label="BiliPod 开屏插画">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="splash-card">
@@ -196,7 +198,7 @@
           <p class="eyebrow"><span></span> 测试计划</p>
           <h2 id="download-title">下一次播放，<br />从 BiliPod 开始。</h2>
           <p>iOS 与 Android 测试版本正在准备中。稳定构建完成后，下载入口将在这里开放。</p>
-          <div class="download-badges" aria-label="测试版下载入口">
+          <div class="download-badges" role="group" aria-label="测试版下载入口">
             <a class="download-badge is-disabled" href="" aria-disabled="true" data-placeholder>
               <img src="./assets/app-store-badge.png" alt="App Store 下载 iOS 测试版" />
             </a>
@@ -219,7 +221,11 @@
         <span>BiliPod</span>
       </a>
       <p>♪(´▽｀) 耳机分你一半～</p>
-      <p>Made for listening.</p>
+      <nav class="footer-links" aria-label="帮助与政策">
+        <a href="./support/">支持</a>
+        <a href="./privacy/">隐私说明</a>
+        <a href="mailto:feedback@bilipod.com">反馈</a>
+      </nav>
     </footer>
   </body>
 </html>
