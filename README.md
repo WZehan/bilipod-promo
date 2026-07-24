@@ -19,7 +19,7 @@ python3 -m http.server 4173
 
 Cloudflare Pages 使用 GitHub 仓库自动部署：
 
-- Pages 项目：`bilipod`
+- Pages 项目：`bilipod-promo`
 - 生产分支：`main`
 - 构建命令：留空
 - 输出目录：`/`
