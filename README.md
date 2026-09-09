@@ -24,4 +24,4 @@ Cloudflare Pages 使用 GitHub 仓库自动部署：
 - 构建命令：留空
 - 输出目录：`/`
 
-iOS 与 Android 测试版徽章目前保持空链接，待稳定构建发布后填充。
+iOS TestFlight 与 Google Play 封闭测试徽章已接入对应测试链接。

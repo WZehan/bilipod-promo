@@ -12,10 +12,6 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-document.querySelectorAll("[data-placeholder]").forEach((link) => {
-  link.addEventListener("click", (event) => event.preventDefault());
-});
-
 const phoneStages = document.querySelectorAll(".phone-stage");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
