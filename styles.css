@@ -726,8 +726,50 @@ a {
 .download-badges {
   display: flex;
   gap: 14px;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 34px;
+}
+
+.android-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(240px, calc(50% - 7px));
+  text-align: center;
+}
+
+.android-download .download-badge {
+  width: 100%;
+}
+
+.test-application {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  min-height: 44px;
+  color: #0f2b37;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  border-radius: 4px;
+}
+
+.test-application:hover {
+  color: #0c4c66;
+}
+
+.test-application:focus-visible {
+  outline: 3px solid rgba(0, 44, 63, 0.72);
+  outline-offset: 4px;
+}
+
+.test-application-note {
+  margin: 0;
+  color: rgba(15, 43, 55, 0.74);
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 .download-badge {
@@ -1618,7 +1660,7 @@ footer .brand { color: white; }
   .closing { padding: 100px 22px 80px; }
   .closing h2 { font-size: 48px; }
   .download-badges { flex-direction: column; width: 100%; align-items: center; }
-  .download-badge { width: min(100%, 260px); }
+  .download-badge, .android-download { width: min(100%, 260px); }
   footer { flex-direction: column; gap: 12px; padding: 36px 24px; text-align: center; }
   footer p { margin: 0; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
